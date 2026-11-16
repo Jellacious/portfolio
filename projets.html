@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets &amp; Compétences - Nino Hernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-dot" aria-hidden="true"></span>
+                Nino Hernandez
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+                Menu
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage-chu.html">Stage CHU</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="e5.html">Dossier E5</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-head">
+                <span class="card-kicker">Approche Projets ➔ Compétences (C1 à C6)</span>
+                <h1>Projets &amp; Réalisations</h1>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filtrer les réalisations">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="stage">Stages</button>
+                <button class="filter-btn" data-filter="dev">Projets Dev</button>
+                <button class="filter-btn" data-filter="homelab">Homelab / Perso</button>
+            </div>
+
+            <div class="bento-grid">
+
+                <!-- Stage 1 : CHU de Poitiers -->
+                <article class="card col-6" id="stage-1" data-category="stage">
+                    <div class="card-header">
+                        <span class="badge badge-accent">Stage 1re année</span>
+                        <span class="card-kicker">Mai - Juin 2026</span>
+                    </div>
+                    <h2 class="card-title">CHU de Poitiers - Site de Châtellerault</h2>
+                    <p class="text-muted">
+                        Stage au service informatique : remplacement de 7 switchs HP par des Cisco 9200, inventaire et gestion de parc, automatisation du renommage de +800 postes et rédaction de 5 fiches de procédures.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">C1 · Patrimoine</span>
+                        <span class="tag">C2 · Incidents</span>
+                        <span class="tag">C4 · Mode projet</span>
+                        <span class="tag">C5 · Mise à disposition</span>
+                    </div>
+                    <div class="btn-row">
+                        <a href="stage-chu.html" class="btn btn-primary">Ouvrir le dossier Stage CHU</a>
+                    </div>
+                </article>
+
+                <!-- Stage 2 : À venir -->
+                <article class="card col-6" id="stage-2" data-category="stage">
+                    <div class="card-header">
+                        <span class="badge badge-warn">Stage 2e année · À venir</span>
+                        <span class="card-kicker">2026 - 2027</span>
+                    </div>
+                    <h2 class="card-title">Stage de 2e année (Option SLAM)</h2>
+                    <p class="text-muted">
+                        Emplacement prêt pour les missions de développement logiciel de deuxième année, le journal de bord hebdomadaire, les comptes rendus de réunion et les preuves associées.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">C1-C6</span>
+                        <span class="tag">En attente</span>
+                    </div>
+                    <div class="btn-row">
+                        <a href="e5.html" class="btn">Voir la matrice E5</a>
+                    </div>
+                </article>
+
+                <!-- PyroFêtes -->
+                <article class="card col-6" id="pyrofetes" data-category="dev">
+                    <div class="card-header">
+                        <span class="badge badge-accent">Atelier SLAM - Groupe</span>
+                        <span class="card-kicker">C# · ASP.NET Core · EF Core</span>
+                    </div>
+                    <h2 class="card-title">PyroFêtes</h2>
+                    <p class="text-muted">
+                        API REST développée en équipe sous .NET / C# avec Entity Framework Core (modèles, DTOs, endpoints et base de données) et gestion collaborative via GitHub.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">C# / .NET</span>
+                        <span class="tag">C4 · Mode projet</span>
+                        <span class="tag">C5 · Mise à disposition</span>
+                    </div>
+                </article>
+
+                <!-- gestion-cabinet-medical -->
+                <article class="card col-6" id="cabinet-medical" data-category="dev">
+                    <div class="card-header">
+                        <span class="badge">Application Web MVC</span>
+                        <span class="card-kicker">PHP · MySQL · HTML/CSS</span>
+                    </div>
+                    <h2 class="card-title">Gestion Cabinet Médical</h2>
+                    <p class="text-muted">
+                        Application web structurée en architecture MVC avec base MySQL et portails par rôle : Administrateur, Professionnel de santé, Secrétaire et Patient (rendez-vous, agendas, dossiers médicaux).
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">PHP / MySQL</span>
+                        <span class="tag">C1 · Patrimoine</span>
+                        <span class="tag">C4 · Mode projet</span>
+                        <span class="tag">C5 · Mise à disposition</span>
+                    </div>
+                </article>
+
+                <!-- CaféCode -->
+                <article class="card col-6" id="cafecode" data-category="dev">
+                    <div class="card-header">
+                        <span class="badge badge-ok">Projet Web · En ligne</span>
+                        <span class="card-kicker">HTML · CSS · Bootstrap · JS</span>
+                    </div>
+                    <h2 class="card-title">CaféCode</h2>
+                    <p class="text-muted">
+                        Site vitrine multi-pages (accueil, carte, réservation, à propos) réalisé en formation avec reproduction d'une maquette Bootstrap.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">C3 · Présence en ligne</span>
+                        <span class="tag">C5 · Mise à disposition</span>
+                    </div>
+                    <div class="btn-row">
+                        <a href="https://cafecode.jellacious.eu" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Démo en ligne</a>
+                        <a href="https://github.com/Jellacious/CafeCode" target="_blank" rel="noopener noreferrer" class="btn">Dépôt GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Nexio -->
+                <article class="card col-6" id="nexio" data-category="dev">
+                    <div class="card-header">
+                        <span class="badge">Projet de cours</span>
+                        <span class="card-kicker">PHP · MySQL · JS · HTML/CSS</span>
+                    </div>
+                    <h2 class="card-title">Nexio</h2>
+                    <p class="text-muted">
+                        Réseau social web complet développé en PHP et MySQL : authentification, gestion de profils et d'abonnements, publications avec likes et commentaires, et messagerie entre utilisateurs.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">PHP / MySQL</span>
+                        <span class="tag">C3 · Présence en ligne</span>
+                        <span class="tag">C5 · Mise à disposition</span>
+                    </div>
+                </article>
+
+                <!-- Homelab / Serveurs personnels -->
+                <article class="card col-12" id="homelab" data-category="homelab">
+                    <div class="card-header">
+                        <span class="badge badge-ok">Projet Personnel · Homelab</span>
+                        <span class="card-kicker">Debian ARM64 · Réseau · Python</span>
+                    </div>
+                    <h2 class="card-title">Infrastructure Homelab &amp; Outils d'automatisation</h2>
+                    <p class="text-muted">
+                        Administration d'une machine virtuelle Debian sous contrainte stricte de ressources (500 Mo de RAM), accès VPN sécurisés via WireGuard et Tailscale, relais réseau et scripts Python d'automatisation.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">Linux / Debian</span>
+                        <span class="tag">WireGuard / Tailscale</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">C1 · Patrimoine</span>
+                        <span class="tag">C6 · Développement pro</span>
+                    </div>
+                    <div class="btn-row">
+                        <a href="https://github.com/Jellacious" target="_blank" rel="noopener noreferrer" class="btn">Voir mes dépôts GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© 2026 Nino Hernandez - Portfolio BTS SIO SLAM</span>
+            <span><a href="mailto:nino.hernandez.pro@gmail.com">nino.hernandez.pro@gmail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

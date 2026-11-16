@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier E5 &amp; Compétences - Nino Hernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-dot" aria-hidden="true"></span>
+                Nino Hernandez
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+                Menu
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stage-chu.html">Stage CHU</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="e5.html" class="active">Dossier E5</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-head">
+                <span class="card-kicker">BTS SIO Option SLAM · Bloc B1</span>
+                <h1>Dossier E5 &amp; Tableau de synthèse</h1>
+                <p class="text-muted">
+                    Centralisation des documents officiels et cartographie des 6 compétences du référentiel E5 couvertes sur les deux années.
+                </p>
+            </div>
+
+            <div class="bento-grid">
+
+                <!-- Documents officiels -->
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="badge badge-ok">Disponible</span>
+                    </div>
+                    <h2 class="card-title">Curriculum Vitae</h2>
+                    <p class="text-muted">
+                        Mon CV complet au format PDF, consultable et téléchargeable directement.
+                    </p>
+                    <div class="btn-row">
+                        <a href="docs/CV_Nino_HERNANDEZ.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ouvrir le CV (PDF)</a>
+                    </div>
+                </section>
+
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="badge badge-warn">À déposer avant J-8</span>
+                    </div>
+                    <h2 class="card-title">Tableau de synthèse E5 (PDF)</h2>
+                    <p class="text-muted">
+                        Emplacement réservé pour le tableau officiel issu du cours Moodle « Examen BTS », complété avec l'URL du portfolio et exporté au format PDF.
+                    </p>
+                    <div class="btn-row">
+                        <span class="btn" aria-disabled="true">Tableau_Synthese_E5.pdf (en attente)</span>
+                    </div>
+                </section>
+
+                <!-- Matrice des 6 compétences -->
+                <section class="card col-12">
+                    <h2 class="card-title">Matrice de correspondance des 6 compétences</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Compétence du référentiel (Bloc B1)</th>
+                                    <th>Réalisations &amp; Preuves associées</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="tag">C1</span></td>
+                                    <td>Gérer le patrimoine informatique</td>
+                                    <td>Inventaire du parc (+741 postes) &amp; renommage automatisé de +800 machines (<a href="stage-chu.html">Stage CHU</a>), base MySQL sur <a href="projets.html#cabinet-medical">Gestion Cabinet Médical</a>, administration Homelab.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag">C2</span></td>
+                                    <td>Répondre aux incidents et aux demandes d'assistance et d'évolution</td>
+                                    <td>Qualification et traitement des tickets, support de proximité et suivi post-bascule réseau (<a href="stage-chu.html">Stage CHU</a>).</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag">C3</span></td>
+                                    <td>Développer la présence en ligne de l'organisation</td>
+                                    <td>Conception et mise en ligne de <a href="projets.html#cafecode">CaféCode</a>, <a href="projets.html#nexio">Nexio</a> et de ce portfolio sur Vercel (<code>www.jellacious.eu</code>).</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag">C4</span></td>
+                                    <td>Travailler en mode projet</td>
+                                    <td>Migration planifiée des 7 switchs HP vers Cisco avec points de suivi tuteur (<a href="stage-chu.html">Stage CHU</a>), développement collaboratif sur <a href="projets.html#pyrofetes">PyroFêtes</a>.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag">C5</span></td>
+                                    <td>Mettre à disposition des utilisateurs un service informatique</td>
+                                    <td>Rédaction de 5 fiches de procédures standardisées, déploiement de postes réseau/disque (<a href="stage-chu.html">Stage CHU</a>), déploiement continu sur Vercel.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag">C6</span></td>
+                                    <td>Organiser son développement professionnel</td>
+                                    <td><a href="veille.html">Veille technologique</a> (Cybersécurité publique &amp; LLMs locaux), certifications CCNA 1 &amp; 2, MOOC RGPD &amp; SecNumacadémie, Homelab personnel.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© 2026 Nino Hernandez - Portfolio BTS SIO SLAM</span>
+            <span><a href="mailto:nino.hernandez.pro@gmail.com">nino.hernandez.pro@gmail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

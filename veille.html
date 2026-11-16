@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Nino Hernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-dot" aria-hidden="true"></span>
+                Nino Hernandez
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+                Menu
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stage-chu.html">Stage CHU</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="veille.html" class="active">Veille</a></li>
+                <li><a href="e5.html">Dossier E5</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-head">
+                <span class="card-kicker">Compétence C6 · Organiser son développement professionnel</span>
+                <h1>Veille Technologique</h1>
+                <p class="text-muted">
+                    Mes deux sujets de veille, ma méthode de collecte et mon retour critique sur l'organisation mise en place.
+                </p>
+            </div>
+
+            <div class="bento-grid">
+
+                <!-- Sujet 1 -->
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="card-kicker">Sujet 1 · Méthode manuelle</span>
+                    </div>
+                    <h2 class="card-title">La cybersécurité au sein des services publics</h2>
+                    <p class="text-muted">
+                        Les services publics et gouvernementaux (hôpitaux, administrations) font partie des cibles les plus attaquées. Se renseigner sur ces incidents permet de savoir comment se défendre et quoi éviter lors du développement.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Sources : bulletins du CERT-FR (cert.ssi.gouv.fr), FrenchBreaches, comptes X (@CERT_FR, @seblatombe).</li>
+                        <li>Stockage : synthèses rédigées et archivées dans Notion.</li>
+                    </ul>
+                </section>
+
+                <!-- Sujet 2 -->
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="card-kicker">Sujet 2 · Méthode automatisée (IA + MCP)</span>
+                    </div>
+                    <h2 class="card-title">L'évolution des LLMs locaux</h2>
+                    <p class="text-muted">
+                        Les IA cloud externes posent un risque de confidentialité sur le code et les données d'entreprise. Suivre les LLMs locaux (llama.cpp, vLLM, Ollama) permet d'évaluer des solutions hébergées en interne sans fuite de données.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Sources : Red Hat Developers, Le Monde Informatique, Silicon.fr et alertes sécurité.</li>
+                        <li>Collecte : agent IA (Gemini / Antigravity) relié à Notion via MCP pour analyser et classer les articles.</li>
+                    </ul>
+                </section>
+
+                <!-- Bilan critique -->
+                <section class="card col-6">
+                    <span class="card-kicker">Bilan</span>
+                    <h2 class="card-title">Ce qui fonctionne</h2>
+                    <ul class="clean-list">
+                        <li>Veille manuelle (Sujet 1) : meilleure assimilation par la lecture directe et tri précis de la pertinence.</li>
+                        <li>Veille IA + MCP (Sujet 2) : fonctionnement continu 24/7, traduction et classement automatique dans Notion accessible partout.</li>
+                    </ul>
+                </section>
+
+                <section class="card col-6">
+                    <span class="card-kicker">Bilan</span>
+                    <h2 class="card-title">Limites et axes d'amélioration</h2>
+                    <ul class="clean-list">
+                        <li>Veille manuelle : difficile à tenir sur la durée lors des périodes chargées (interruption en août).</li>
+                        <li>Veille IA : risque d'hallucinations ou de faux liens quand l'IA se force à produire une fiche par jour. Vérification humaine obligatoire de chaque source.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© 2026 Nino Hernandez - Portfolio BTS SIO SLAM</span>
+            <span><a href="mailto:nino.hernandez.pro@gmail.com">nino.hernandez.pro@gmail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

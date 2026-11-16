@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 1re année : CHU de Poitiers - Nino Hernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-dot" aria-hidden="true"></span>
+                Nino Hernandez
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+                Menu
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stage-chu.html" class="active">Stage CHU</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="e5.html">Dossier E5</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-head">
+                <span class="card-kicker">Stage BTS SIO 1re année · Mai - Juin 2026</span>
+                <h1>CHU de Poitiers - Site de Châtellerault</h1>
+                <p class="text-muted">
+                    Synthèse des missions réalisées au sein du service informatique : infrastructure réseau, inventaire du parc, automatisation et rédaction documentaire.
+                </p>
+            </div>
+
+            <div class="bento-grid">
+
+                <!-- Projet principal : Switchs HP -> Cisco -->
+                <section class="card col-12">
+                    <div class="card-header">
+                        <span class="badge badge-accent">Projet Réseau</span>
+                        <span class="card-kicker">C1 · C4 · C5</span>
+                    </div>
+                    <h2 class="card-title">Remplacement de 7 switchs HP 2620 par des Cisco 9200</h2>
+                    <p class="text-muted">
+                        Suite à la fusion entre le CHU de Poitiers et le site de Châtellerault, l'architecture réseau devait être uniformisée sur du matériel Cisco (passage de liens 100 Mb/s à 1 Gb/s).
+                    </p>
+                    <ul class="clean-list">
+                        <li>Objectifs : standardiser le matériel, faciliter l'administration, améliorer la supervision et fiabiliser le réseau.</li>
+                        <li>Contraintes : continuité de service hospitalier et maintien strict des VLANs existants (ex. VLAN 200 conservé à l'identique).</li>
+                        <li>Méthode appliquée : relevé de la configuration VLAN par port sur le switch HP, application de la configuration via CLI sur le Cisco 9200, bascule physique des câbles RJ45 en autocommutateur central et suivi post-bascule.</li>
+                    </ul>
+                </section>
+
+                <!-- Inventaire, Renommage & Déploiement -->
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="badge">Parc, Inventaire &amp; Déploiement</span>
+                        <span class="card-kicker">C1 · C2 · C5</span>
+                    </div>
+                    <h2 class="card-title">Inventaire, renommage et déploiement de postes</h2>
+                    <ul class="clean-list">
+                        <li>Inventaire du parc : suivi par étiquetage de plus de 741 postes et ~180 imprimantes sur Châtellerault (+40 sur Loudun), avec gestion des demandes utilisateurs via le système de tickets.</li>
+                        <li>Traitement Excel : nettoyage et automatisation du renommage de plus de 800 machines selon la nomenclature du CHU.</li>
+                        <li>Déploiement : réinstallation de postes par le réseau ou via disque, mise à niveau système et rebrassage de baies.</li>
+                    </ul>
+                </section>
+
+                <!-- 5 Fiches de procédures -->
+                <section class="card col-6">
+                    <div class="card-header">
+                        <span class="badge">Documentation</span>
+                        <span class="card-kicker">C5 · Standardisation</span>
+                    </div>
+                    <h2 class="card-title">5 Fiches de procédures rédigées</h2>
+                    <p class="text-muted">Rédigées selon la charte documentaire du CHU :</p>
+                    <ul class="clean-list">
+                        <li>Création d'une image système à l'aide de l'outil Macrium.</li>
+                        <li>Réinstallation d'un poste informatique à l'aide du réseau.</li>
+                        <li>Réinstallation d'un poste informatique à l'aide d'un disque.</li>
+                        <li>Récupération des composants (SSD et RAM) sur d'anciens ordinateurs.</li>
+                        <li>Séparation du clavier d'un téléphone IP portatif DECT.</li>
+                    </ul>
+                </section>
+
+                <!-- Journal de bord & Comptes rendus de réunion -->
+                <section class="card col-12">
+                    <div class="card-header">
+                        <span class="badge badge-accent">Suivi de stage &amp; Mode projet (C4)</span>
+                        <span class="card-kicker">Journal de bord &amp; Comptes rendus</span>
+                    </div>
+                    <h2 class="card-title">Journal de bord &amp; Points avec l'équipe</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Période / Jalon</th>
+                                    <th>Activité / Réunion de suivi</th>
+                                    <th>Compétences mobilisées</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Semaine 1</td>
+                                    <td>Prise en main de l'environnement du service informatique, présentation du parc et des procédures internes.</td>
+                                    <td><span class="tag">C1</span> <span class="tag">C2</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Semaines 2 - 3</td>
+                                    <td>Déploiement et réinstallation de postes (réseau/disque), création d'images Macrium et rédaction des fiches de procédures standardisées.</td>
+                                    <td><span class="tag">C1</span> <span class="tag">C5</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Semaines 4 - 5</td>
+                                    <td>Traitement sous Excel du renommage de +800 postes ; préparation et exécution de la bascule des 7 switchs HP 2620 vers Cisco 9200.</td>
+                                    <td><span class="tag">C1</span> <span class="tag">C4</span> <span class="tag">C5</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Points tuteur (CR)</td>
+                                    <td>Points réguliers de validation des fiches de procédures, vérification des VLANs avant bascule réseau et bilan de fin de stage.</td>
+                                    <td><span class="tag">C4</span> <span class="tag">C6</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© 2026 Nino Hernandez - Portfolio BTS SIO SLAM</span>
+            <span><a href="mailto:nino.hernandez.pro@gmail.com">nino.hernandez.pro@gmail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
